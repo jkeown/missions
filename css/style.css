@@ -1,0 +1,224 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p{
+  position: absolute;
+  color: white;
+  right: 0;
+  padding: 5px 5px 0 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+#map{
+  border: 2px solid #000;
+  position: relative;
+  height: 600px;
+  width: 800px;
+  max-height: 100vh;
+  background-image: url(../img/ca-map-color.min.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  float: left;
+}
+#wordbank{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  max-height: 100vh;
+  flex-wrap: wrap;
+}
+.mission{
+  position: absolute;
+  min-height: 10px;
+  min-width: 125px;
+  max-width: 230px;
+  border-bottom: 1px solid black;
+}
+.year{
+  position: absolute;
+  width: 55px;
+  margin-left: 5px;
+}
+.mission-name{
+  width: 230px;
+  margin-right: 0 50px 10px 0;
+  padding-left: 5px;
+}
+.hovered{
+  outline: 5px dashed goldenrod;
+}
+div:hover{
+  cursor: pointer;
+}
+.invisible{
+  display: none;
+}
+.landmark{
+  font-weight: bold;
+}
+.buttons{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 5px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 125px; 
+  color: white;
+  border-radius: 5px;
+}
+.button:hover{
+  cursor: pointer;
+  box-shadow:  0 10px 6px -8px #000;
+  transform: translateY(-5px);
+}
+.blue{
+  border: 5px solid #060f94;
+  background: #7fdbff;
+}
+.red{
+  border: 5px solid #900503;
+  background: #e2252a;
+}
+/* Absolute position missions & landmarks*/
+#sac{
+  position: absolute;
+  left: 25%;
+}
+#twenty1{
+  top: 5%;
+  left: 19%;
+}
+#twenty{
+  top: 10%;
+  left: 18%;
+}
+#sfbay{
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+#six{
+  top: 15%;
+  left: 1%;
+}
+#fourteen{
+  top: 16%;
+  left: 25%;
+}
+#eight{
+  top: 21%;
+  left: 23%;
+}
+#twelve{
+  top: 25%;
+  left: 3%;
+}
+#monbay{
+  position: absolute;
+  top: 31%;
+  left: 5%;
+}
+#fifteen{
+  top: 27%;
+  left: 29%;
+}
+#two{
+  top: 34%;
+  left: 25%;
+}
+#thirteen{
+  top: 38%;
+  left: 31%;
+}
+#three{
+  top: 44%;
+  left: 13%;
+}
+#sixteen{
+  top: 47%;
+  left: 36%;
+}
+#five{
+  top: 54%;
+  left: 36%;
+}
+#nineteen{
+  top: 60%;
+  left: 42%;
+}
+#eleven{
+  top: 64%;
+  left: 18%;
+}
+#seventeen{
+  top: 64%;
+  left: 59%;
+}
+#ten{
+  top: 67%;
+  left: 25%;
+}
+#nine{
+  top: 70%;
+  left: 31%;
+}
+#four{
+  top: 70%;
+  left: 64%;
+}
+#la{
+  position: absolute;
+  top: 77%;
+  left: 58%;
+}
+#ci{
+  position: absolute;
+  top: 81%;
+  left: 29%}
+#seven{
+  top: 82%;
+  left: 67%;
+}
+#eighteen{
+  top: 85%;
+  left: 73%;
+}
+#one{
+  top: 94%;
+  left: 73%;
+}
+#sd{
+  position: absolute;
+  top: 97%;
+  left: 72%;
+}
+
+/* All correct answers */
+.correct{
+  border: 3px solid #2ecc40;
+}
+.wrong{
+  border: 3px solid red;
+}
+.hidden{
+  display: none;
+}
+#correct{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 100px;
+  width: 500px;
+  margin:  auto;
+}
+#correct img{
+  transform: scale(2);
+}
