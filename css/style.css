@@ -1,17 +1,19 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-p{
+p {
   position: absolute;
   color: white;
   right: 0;
   padding: 5px 5px 0 0;
   text-decoration: underline;
   font-weight: 700;
+  width: 40%;
+  line-height: 1.3;
 }
-#map{
+#map {
   border: 2px solid #000;
   position: relative;
   height: 600px;
@@ -23,7 +25,7 @@ p{
   background-position: right bottom;
   float: left;
 }
-#wordbank{
+#wordbank {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,194 +33,201 @@ p{
   max-height: 100vh;
   flex-wrap: wrap;
 }
-.mission{
+.mission {
   position: absolute;
   min-height: 10px;
   min-width: 125px;
   max-width: 230px;
   border-bottom: 1px solid black;
 }
-.year{
+.year {
   position: absolute;
   width: 55px;
   margin-left: 5px;
 }
-.mission-name{
+.mission-name {
   width: 230px;
   margin-right: 0 50px 10px 0;
   padding-left: 5px;
 }
-.hovered{
+.hovered {
   outline: 5px dashed goldenrod;
 }
-div:hover{
+div:hover {
   cursor: pointer;
 }
-.invisible{
+.invisible {
   display: none;
 }
-.landmark{
+.landmark {
   font-weight: bold;
 }
-.buttons{
+.buttons {
   position: absolute;
   bottom: 0;
   display: flex;
   padding: 5px;
 }
-.button{
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 125px; 
+  width: 125px;
   color: white;
   border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
 }
-.button:hover{
+.button:hover {
   cursor: pointer;
-  box-shadow:  0 10px 6px -8px #000;
+  box-shadow: 0 10px 6px -8px #000;
   transform: translateY(-5px);
 }
-.blue{
-  border: 5px solid #060f94;
-  background: #7fdbff;
+.blue {
+  border: 3px solid #7fdbff;
+  background: #060f94;
+  margin-right: 5px;
 }
-.red{
-  border: 5px solid #900503;
-  background: #e2252a;
+.red {
+  border: 3px solid #e2252a;
+  background: #900503;
 }
 /* Absolute position missions & landmarks*/
-#sac{
+#sac {
   position: absolute;
   left: 25%;
 }
-#twenty1{
+#twenty1 {
   top: 5%;
   left: 19%;
 }
-#twenty{
+#twenty {
   top: 10%;
   left: 18%;
 }
-#sfbay{
+#sfbay {
   position: absolute;
   top: 8%;
   left: 25%;
 }
-#six{
+#six {
   top: 15%;
   left: 1%;
 }
-#fourteen{
+#fourteen {
   top: 16%;
   left: 25%;
 }
-#eight{
+#eight {
   top: 21%;
   left: 23%;
 }
-#twelve{
+#twelve {
   top: 25%;
   left: 3%;
 }
-#monbay{
+#monbay {
   position: absolute;
   top: 31%;
   left: 5%;
 }
-#fifteen{
+#fifteen {
   top: 27%;
   left: 29%;
 }
-#two{
+#two {
   top: 34%;
   left: 25%;
 }
-#thirteen{
+#thirteen {
   top: 38%;
   left: 31%;
 }
-#three{
+#three {
   top: 44%;
   left: 13%;
 }
-#sixteen{
+#sixteen {
   top: 47%;
   left: 36%;
 }
-#five{
+#five {
   top: 54%;
   left: 36%;
 }
-#nineteen{
+#nineteen {
   top: 60%;
   left: 42%;
 }
-#eleven{
+#eleven {
   top: 64%;
   left: 18%;
 }
-#seventeen{
+#seventeen {
   top: 64%;
   left: 59%;
 }
-#ten{
+#ten {
   top: 67%;
   left: 25%;
 }
-#nine{
+#nine {
   top: 70%;
   left: 31%;
 }
-#four{
+#four {
   top: 70%;
   left: 64%;
 }
-#la{
+#la {
   position: absolute;
   top: 77%;
   left: 58%;
 }
-#ci{
+#ci {
   position: absolute;
   top: 81%;
-  left: 29%}
-#seven{
+  left: 29%;
+}
+#seven {
   top: 82%;
   left: 67%;
 }
-#eighteen{
+#eighteen {
   top: 85%;
   left: 73%;
 }
-#one{
+#one {
   top: 94%;
   left: 73%;
 }
-#sd{
+#sd {
   position: absolute;
   top: 97%;
   left: 72%;
 }
 
 /* All correct answers */
-.correct{
+.correct {
   border: 3px solid #2ecc40;
 }
-.wrong{
+.wrong {
   border: 3px solid red;
 }
-.hidden{
+.hidden {
   display: none;
 }
-#correct{
+#correct {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   height: 100px;
   width: 500px;
-  margin:  auto;
+  margin: auto;
 }
-#correct img{
+#correct img {
   transform: scale(2);
 }
